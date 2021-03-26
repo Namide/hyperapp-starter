@@ -1,0 +1,55 @@
+{
+  "name": "hyperapp-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "parcel src/index.html --open",
+    "build": "parcel build src/index.html --public-url / --out-dir ./dist --no-source-maps",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Namide/hyperapp-starter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Namide/hyperapp-starter/issues"
+  },
+  "homepage": "https://github.com/Namide/hyperapp-starter#readme",
+  "dependencies": {
+    "hyperapp": "^2.0.12",
+    "hyperapp-fx": "^2.0.0-beta.2",
+    "hyperlit": "^0.3.6",
+    "hyperload": "0.0.1",
+    "hyperway": "^0.3.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-pwa-manifest": "^3.0.10",
+    "parcel-plugin-sw-cache": "^0.3.1",
+    "sass": "^1.32.8"
+  },
+  "pwaManifest": {
+    "name": "Hyperapp starter",
+    "shortName": "Hyperapp",
+    "startURL": "/",
+    "theme": "#FFFFFF",
+    "display": "fullscreen",
+    "generateIconOptions": {
+      "baseIcon": "./src/asset/favicon.svg",
+      "sizes": [
+        192,
+        384,
+        512
+      ],
+      "genFavicons": true
+    },
+    "prefer_related_applications": false
+  },
+  "cache": {
+    "strategy": "default",
+    "clearDist": true
+  }
+}
