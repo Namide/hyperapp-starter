@@ -1,5 +1,5 @@
 import { app } from 'hyperapp'
-import Body from './Body'
+import App from './App'
 import router from './router'
 import Home from './view/Home'
 
@@ -9,7 +9,7 @@ app({
     params: {},
     view: Home
   },
-  view: Body,
+  view: App,
   subscriptions: () => [ router ],
   node: document.body
 })

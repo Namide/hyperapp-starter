@@ -16,10 +16,10 @@ export default state => {
       <nav>
         <ul>
           <li>
-            <${Link} to="/" active=${ isHome }>home<//>
+            <${Link} to="/">home<//>
           </li>
           <li>
-            <${Link} to="/about" active=${ isAbout }>about<//>
+            <${Link} to="/about">about<//>
           </li>
         </ul>
       </nav>
